@@ -22,4 +22,9 @@ class ProductController extends Controller
         $data = Product::where('name','Like','%'.$req->input('query').'%')->get();
         return view('search',['products'=>$data]);
     }
+
+    public function addToCart(Request $req)
+    {
+        return 'hello';
+    }
 }
