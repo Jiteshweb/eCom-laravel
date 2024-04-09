@@ -7,7 +7,12 @@ use App\Models\User;
 class UserController extends Controller
 {
     //
-    function login(Request $req){
+   public function index()
+    {
+        return view('login');
+    }
+
+   public function login(Request $req){
         $user = User::where(['email'=>$req->email])->first();
         if (!$user || !Hash::check($req->password, $user->password)) {
             return 'User name or password is not correct';
