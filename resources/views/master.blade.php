@@ -62,6 +62,13 @@
         .search-box {
             width: 500px !important;
         }
+
+        .cart-list-devider {
+            border-bottom: 1px solid #111111;
+            margin-bottom: 20px;
+            padding-block: 20px;
+
+        }
     </style>
 
 </html>
